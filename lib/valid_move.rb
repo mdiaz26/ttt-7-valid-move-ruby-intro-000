@@ -1,3 +1,12 @@
+def position_taken?(array, index)
+  result = nil
+  if array[index] == "X" || array[index] == "O"
+  result  = true
+  else result = false
+  end
+  result
+end
+
 # code your #valid_move? method here
 def valid_move?(array, index)
   answer = nil
@@ -9,11 +18,3 @@ def valid_move?(array, index)
 puts answer
 end
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
-def position_taken?(array, index)
-  result = nil
-  if array[index] == "X" || array[index] == "O"
-  result  = true
-  else result = false
-  end
-  result
-end
