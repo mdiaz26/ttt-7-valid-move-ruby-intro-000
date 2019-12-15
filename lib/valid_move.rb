@@ -11,10 +11,10 @@ end
 def valid_move?(array, index)
   answer = nil
   if position_taken?(array, index) == true || index.between?(0,8) == false
-    answer = "invalid move"
+    answer = false
   else
-    answer = "valid move"
+    answer = true
   end
-puts answer
+answer
 end
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
